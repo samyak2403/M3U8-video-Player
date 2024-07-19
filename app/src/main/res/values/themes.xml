@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.M3U8VideoPlayer" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/button_color</item>
+        <item name="colorPrimaryDark">@color/button_color_pressed</item>
+        <item name="colorAccent">@color/button_color</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:editTextBackground">@drawable/edittext_background</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+    </style>
+
+    <!-- Button style -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="Theme.M3U8VideoPlayer" parent="Base.Theme.M3U8VideoPlayer" />
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1017341386330",
+    "project_id": "m3u8-server",
+    "storage_bucket": "m3u8-server.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017341386330:android:c407bccd03f2c8ad9fc263",
+        "android_client_info": {
+          "package_name": "com.arrowwouldstudio.m3u8videoplayer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDZsSfXpwO_I2GTsI3LgRvxMFkA11Q2oM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

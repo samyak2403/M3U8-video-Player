@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/url_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/paste_button"
+                android:layout_toLeftOf="@+id/paste_button"
+                android:layout_weight="1"
+                android:hint="Enter M3U8 URL"
+                android:background="@drawable/edittext_background"
+                android:padding="12dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_color" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/paste_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/button_text_color"
+                android:layout_centerVertical="true"
+                android:text="Paste"
+                android:foreground="?attr/selectableItemBackground"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/play_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:background="@drawable/button_background_2"
+                android:textColor="@color/button_text_color"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"
+                android:foreground="?attr/selectableItemBackground"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:background="@drawable/button_background_3"
+                android:textColor="@color/button_text_color"
+                android:padding="12dp"
+                android:layout_marginStart="8dp"
+                android:foreground="?attr/selectableItemBackground"/>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/view_playlist_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Playlist"
+            android:background="@drawable/button_background_5"
+            android:textColor="@color/button_text_color"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:foreground="?attr/selectableItemBackground"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_cloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_cloud"
+        app:tint="@android:color/white"
+        android:contentDescription="Cloud Icon"
+        android:backgroundTint="#333333" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/setting_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_settings"
+        app:tint="@android:color/white"
+        android:contentDescription="Add Icon"
+        android:backgroundTint="#333333" />
+
+</RelativeLayout>

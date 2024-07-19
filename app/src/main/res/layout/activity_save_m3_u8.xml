@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".SaveM3U8Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#333333"
+        android:title="M3U8 Server"
+        android:titleTextColor="@android:color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@id/toolbar"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/url_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter M3U8 URL"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:enabled="true" />
+
+        <EditText
+            android:id="@+id/channel_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Channel Name"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/hint_color"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:id="@+id/channel_icon_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:background="@drawable/button_background"
+                android:textColor="@color/button_text_color"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/edit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:background="@drawable/button_background_3"
+                android:textColor="@color/button_text_color"
+                android:padding="12dp"
+                android:layout_marginStart="8dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:background="@drawable/button_background_8"
+                android:textColor="@color/button_text_color"
+                android:padding="12dp"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

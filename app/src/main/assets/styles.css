@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0056b3;
+    margin-top: 20px;
+}
+
+ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    background: url('bullet.png') no-repeat left center;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

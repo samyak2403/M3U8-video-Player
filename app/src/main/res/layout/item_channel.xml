@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/edittext_background"
+    android:layout_marginBottom="8dp">
+
+<TextView
+android:id="@+id/channel_name_text_view"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="16sp"
+android:textColor="@color/text_color"
+android:textStyle="bold" />
+
+<TextView
+android:id="@+id/channel_url_text_view"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:textSize="14sp"
+android:textColor="@color/text_color"
+android:layout_below="@id/channel_name_text_view"
+android:layout_marginTop="4dp" />
+
+<androidx.appcompat.widget.AppCompatButton
+android:id="@+id/edit_button"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Edit"
+android:background="@drawable/button_background_6"
+android:textColor="@color/button_text_color"
+android:layout_alignParentEnd="true"
+android:layout_centerVertical="true" />
+    </RelativeLayout>
